@@ -59,28 +59,242 @@
       "timeout": 30000
     }
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: Playwright Test did not expect test() to be called here.\nMost common reasons include:\n- You are calling test() in a configuration file.\n- You are calling test() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.",
-      "stack": "Error: Playwright Test did not expect test() to be called here.\nMost common reasons include:\n- You are calling test() in a configuration file.\n- You are calling test() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n    at TestTypeImpl._currentSuite (/tmp/work/c79becc3-bd8f-4c5f-877b-0f73c463e766/node_modules/playwright/lib/common/testType.js:75:13)\n    at TestTypeImpl._createTest (/tmp/work/c79becc3-bd8f-4c5f-877b-0f73c463e766/node_modules/playwright/lib/common/testType.js:88:24)\n    at test (/tmp/work/c79becc3-bd8f-4c5f-877b-0f73c463e766/node_modules/playwright/lib/transform/transform.js:282:12)\n    at /tmp/work/c79becc3-bd8f-4c5f-877b-0f73c463e766/e2e/app.spec.ts:20:1",
-      "location": {
-        "file": "/tmp/work/c79becc3-bd8f-4c5f-877b-0f73c463e766/e2e/app.spec.ts",
-        "column": 1,
-        "line": 20
-      },
-      "snippet": "\u001b[90m   at \u001b[39mapp.spec.ts:20\n\n  18 | // ─── Happy Path Tests ──────────────────────────────────────────────────────────\n  19 |\n> 20 | test('happy path: add a task and see it in the list with counter increment', async ({ page }) => {\n     | ^\n  21 |   await freshPage(page)\n  22 |\n  23 |   // Counter starts at 0 (footer hidden when no tasks)"
-    },
-    {
-      "message": "Error: No tests found",
-      "stack": "Error: No tests found"
+      "title": "app.spec.ts",
+      "file": "app.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "happy path: add a task and see it in the list with counter increment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-5fcb51212ddd79628084",
+          "file": "app.spec.ts",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "happy path: mark a task complete applies strikethrough and decrements counter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-73440c652a58a4cec6f1",
+          "file": "app.spec.ts",
+          "line": 43,
+          "column": 1
+        },
+        {
+          "title": "happy path: clear completed button removes completed tasks, keeps active ones",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-8abbce5e85c9740b87ca",
+          "file": "app.spec.ts",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "filter: all / active / completed tabs show correct subsets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-12c08c86f46c2426bbc2",
+          "file": "app.spec.ts",
+          "line": 87,
+          "column": 1
+        },
+        {
+          "title": "data persistence: tasks survive page refresh",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-8325b07bda0ec1721d8c",
+          "file": "app.spec.ts",
+          "line": 113,
+          "column": 1
+        },
+        {
+          "title": "dark mode persistence: light mode survives page refresh",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-45832042ccc70a122c00",
+          "file": "app.spec.ts",
+          "line": 136,
+          "column": 1
+        },
+        {
+          "title": "edge case: submitting empty input does not add a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-ab3d4d1a4944e1d3e2e4",
+          "file": "app.spec.ts",
+          "line": 156,
+          "column": 1
+        },
+        {
+          "title": "edge case: delete button removes task immediately",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-8415ccf56bd84ad91616",
+          "file": "app.spec.ts",
+          "line": 169,
+          "column": 1
+        },
+        {
+          "title": "screenshot: dark mode with mixed tasks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-39a78342d7b4cc3ba2dc",
+          "file": "app.spec.ts",
+          "line": 188,
+          "column": 1
+        },
+        {
+          "title": "screenshot: light mode main screen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-da3669af85d6c048c8fe",
+          "file": "app.spec.ts",
+          "line": 209,
+          "column": 1
+        },
+        {
+          "title": "screenshot: empty state in dark mode",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-4a74cc2d1f70aa02552a",
+          "file": "app.spec.ts",
+          "line": 227,
+          "column": 1
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-02-27T20:12:22.655Z",
-    "duration": 958.6029999999996,
+    "startTime": "2026-02-27T20:15:30.483Z",
+    "duration": 44.187999999999874,
     "expected": 0,
-    "skipped": 0,
+    "skipped": 11,
     "unexpected": 0,
     "flaky": 0
   }
